@@ -1,7 +1,6 @@
 import random
 import hangman_words
 import hangman_art
-from hangman.hangman_art import stages
 
 LIVES = 6
 
@@ -41,7 +40,7 @@ while is_game_on:
                 display += "-"
 
         print(display)
-        print(hangman_art.stages[len(stages) - 1])
+        print(hangman_art.stages[len(hangman_art.stages) - 1])
         if "-" not in display:
             is_game_on = False
 
